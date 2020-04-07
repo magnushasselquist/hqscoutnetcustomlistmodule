@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="0.9" client="site" method="upgrade">
+    <name>HQ Scoutnet Custom Module</name>
+    <author>Magnus Hasselquist</author>
+    <authorUrl>https://github.com/magnushasselquist</authorUrl>
+    <version>0.9</version>
+    <creationDate>2018-03-13</creationDate>
+    <license>GNU General Public License version 2 or later</license>
+    <description>Displaying Users from a custom list in Scoutnet.</description>
+    <files>
+        <filename>mod_hqscoutnetcustomlistmodule.xml</filename>
+        <filename module="mod_hqscoutnetcustomlistmodule">mod_hqscoutnetcustomlistmodule.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    	<fields name="params">
+    		<fieldset name="basic">
+       			<field
+               		name="listid"
+               		type="text"
+               		default=""
+               		label="Select the Custom List to be presented in the module" />
+                  <field
+                		name="text-above"
+                		type="editor"
+                		label="Text to be included ABOVE the user list."
+ 					        buttons="false"
+ 					        filter="raw" />
+               	 <field
+               		name="template"
+               		type="editor"
+               		label="Template for displaying each user. Use [filedname] syntax to include fields."
+					        buttons="false"
+					        filter="raw" />
+                  <field
+                		name="text-below"
+                		type="editor"
+                		label="Text to be included UNDER the user list"
+ 					        buttons="false"
+ 					        filter="raw" />
+                  <field
+                		name="module-class"
+                		type="text"
+                		label="Class to be added to module"
+ 					        buttons="false"
+ 					        filter="raw" />			
+    		</fieldset>
+		</fields>
+    </config>
+    <updateservers>
+      <server type="extension" priority="2" name="HQ Scoutnet Custom List Module"> https://raw.githubusercontent.com/magnushasselquist/hqscoutnetcustomlistmodule/master/updates.xml</server>
+    </updateservers>
+</extension>

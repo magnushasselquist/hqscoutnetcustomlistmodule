@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update>
+    <name>HQ Scoutnet Custom List Module</name>
+    <description>HQ Scoutnet Custom List Module</description>
+    <element>hqscoutnetcustomlistmodule</element>
+    <type>component</type>
+    <version>0.9</version>
+    <infourl title="Release notes">http://magnushasselquist.github.io/hqscoutnetcustomlistmodule/</infourl>
+    <downloads>
+        <downloadurl type="full" format="zip">https://github.com/magnushasselquist/hqscoutnetcustomlistmodule/zipball/master</downloadurl>
+    </downloads>
+    <tags>
+        <tag>stable</tag>
+    </tags>
+    <maintainer>Magnus Hasselquist</maintainer>
+    <maintainerurl>https://github.com/magnushasselquist</maintainerurl>
+    <targetplatform name="joomla" version="3.1"/>
+</update>
